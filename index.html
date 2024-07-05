@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-thermometer-half"></i> Temperature Converter</h1>
+        </header>
+        <main>
+            <form id="converter-form">
+                <div class="input-group">
+                    <label for="temperature">Temperature:</label>
+                    <input type="number" id="temperature" name="temperature" placeholder="Enter temperature" required>
+                </div>
+                <div class="input-group">
+                    <label for="unit">From:</label>
+                    <select id="unit" name="unit">
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="to-unit">To:</label>
+                    <select id="to-unit" name="to-unit">
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+                <button type="submit">Convert</button>
+            </form>
+            <div class="result" id="result">
+                <h2>Converted Temperature</h2>
+                <p id="converted-temperature"></p>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; <span id="current-year">2024</span> SANA VINODH | All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
